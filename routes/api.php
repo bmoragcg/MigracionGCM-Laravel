@@ -35,6 +35,7 @@ Route::prefix('buscarEntidad')->group(function () {
   Route::get('dataByDep/{dep}', [BuscarEntidadController::class, 'dataByDep']);
   Route::get('dataByCiu/{ciu}', [BuscarEntidadController::class, 'dataByCiu']);
   Route::get('dataByOrg/{org}', [BuscarEntidadController::class, 'dataByOrg']);
+  Route::post('filterData', [BuscarEntidadController::class, 'filterData']);
 });
 
 // Route::prefix('buscarEntidad')->group(function () {
